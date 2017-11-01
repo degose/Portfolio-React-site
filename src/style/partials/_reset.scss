@@ -20,10 +20,10 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-	font-family: 'Noto Sans', sans-serif;
+	// font-size: 100%;
+	// font: inherit;
+	// vertical-align: baseline;
+	// font-family: 'Noto Sans', sans-serif;
 	
 }
 /* HTML5 display-role reset for older browsers */
@@ -31,7 +31,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-ul {
+ul, ol {
 	list-style: none;
 }
 blockquote, q {
@@ -54,4 +54,8 @@ a {
 
 button {
   border-radius: 0;
+}
+
+strong {
+  font-weight: 500;
 }

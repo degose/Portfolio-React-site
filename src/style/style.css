@@ -9,20 +9,117 @@
   width: 100%;
   height: auto; }
 
+.fa {
+  margin-right: 5px; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ul, ol {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: none; }
+
+button {
+  border-radius: 0; }
+
+strong {
+  font-weight: 500; }
+
 .header-info {
   min-height: 100vh; }
 
-.fa-github {
-  margin-right: 5px; }
+.header-content-text {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-weight: 200; }
+
+.img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
 
 .profile-img {
-  background: red; }
+  width: 200px;
+  height: 200px; }
 
-.jumbotron {
+.header-bg {
   background: #A7FFEB;
   /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left top, #A7FFEB, #1DE9B6);
-  min-height: 100vh; }
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  margin: 0; }
 
-.jarallax {
-  background-image: url("../assets/29745758812_38faec28e5_k.jpg"); }
+.project-bg {
+  background: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  margin: 0; }
+
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.sub-text {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 50px; }
+
+.info {
+  margin-top: 30px; }
+
+.info-list {
+  margin-bottom: 25px; }
+
+.content-title {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 5px; }
+
+.content-text {
+  font-weight: 200; }
+
+.btn-info-link {
+  margin-right: 10px; }

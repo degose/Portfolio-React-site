@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import NavBar from './component/nav_bar';
 import HeaderInfo from './component/header_info';
+import MainProject from './component/main_project';
 
 class App extends Component {
   render() {
@@ -8,6 +9,7 @@ class App extends Component {
       <div>
         <NavBar />
         <HeaderInfo />
+        <MainProject />
 
         
       </div>

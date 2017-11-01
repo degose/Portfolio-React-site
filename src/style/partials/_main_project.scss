@@ -1,0 +1,42 @@
+
+.project-bg {
+  background: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-text {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.info {
+  margin-top: 30px;
+}
+
+.info-list {
+  margin-bottom: 25px; 
+}
+
+.content-title {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.content-text {
+  font-weight: 200;
+}
+
+.btn-info-link {
+  margin-right: 10px; 
+}
