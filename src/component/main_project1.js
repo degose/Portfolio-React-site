@@ -6,8 +6,10 @@ class MainProject1 extends Component {
       <section className="main-project">
         <div className="jumbotron project-bg">
           <div className="container">
-            <h1 className="">Bond</h1>
-            <p className="sub-text">그룹 생성이 가능한 SNS 서비스</p>
+            <div className="title-wrapper">
+              <h1 className="">Bond</h1>
+              <p className="sub-text">그룹 생성이 가능한 SNS 서비스</p>
+            </div>
             <div className="content-wrapper row">
               <div className="col video-wrapper">
                 <div className="media">
@@ -38,31 +40,34 @@ class MainProject1 extends Component {
                 </ul>
               </div>
             </div>
-            <div className="btn-group" role="group" aria-label="button group">
-              <form action="https://github.com/degose/Bond/tree/dev">
-                <button type="submit" className="btn btn-info-link btn-outline-dark">
-                  <span className="fa fa-github" aria-hidden="true"></span>
-                  Github
-                </button>
-              </form>
-              <form action="http://bond.thekym.com/">
-                <button type="submit" className="btn btn-info-link btn-outline-dark">
-                  <span className="fa fa-globe" aria-hidden="true"></span>
-                  Web Site
-                </button>
-              </form>
-              <form action="https://docs.google.com/spreadsheets/d/19uk0yIWIGAGDWxCyIE3sBjMY3eeNxImAGhN5P_W6S3M/edit?usp=sharing">
-                <button type="submit" className="btn btn-info-link btn-outline-dark">
-                  <span className="fa fa-pencil-square-o" aria-hidden="true"></span>
-                  Daily Scrum
-                </button>
-              </form>
-              <form action="https://youtu.be/gty0xzSBzRk">
-                <button type="submit" className="btn btn-info-link btn-outline-dark">
-                  <span className="fa fa-youtube-play" aria-hidden="true"></span>
-                  Youtube
-                </button>
-              </form>
+            <div className="btn-wrapper">
+              <div className="btn-group" role="group" aria-label="button group">
+                <form action="https://github.com/degose/Bond/tree/dev">
+                  <button type="submit" className="btn btn-info-link btn-outline-dark">
+                    <span className="fa fa-github" aria-hidden="true"></span>
+                    Github
+                  </button>
+                </form>
+                <form action="http://bond.thekym.com/">
+                  <button type="submit" className="btn btn-info-link btn-outline-dark">
+                    <span className="fa fa-globe" aria-hidden="true"></span>
+                    Web Site
+                  </button>
+                </form>
+                <form action="https://docs.google.com/spreadsheets/d/19uk0yIWIGAGDWxCyIE3sBjMY3eeNxImAGhN5P_W6S3M/edit?usp=sharing">
+                  <button type="submit" className="btn btn-info-link btn-outline-dark">
+                    <span className="fa fa-pencil-square-o" aria-hidden="true"></span>
+                    Daily Scrum
+                  </button>
+                </form>
+                <form action="https://youtu.be/gty0xzSBzRk">
+                  <button type="submit" className="btn btn-info-link btn-outline-dark">
+                    <span className="fa fa-youtube-play" aria-hidden="true"></span>
+                    Youtube
+                  </button>
+                </form>
+
+              </div>
 
             </div>
           </div>

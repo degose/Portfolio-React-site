@@ -6,8 +6,10 @@ class MainProject2 extends Component {
       <section className="main-project">
         <div className="jumbotron project-bg">
           <div className="container">
-            <h1 className="">mood</h1>
-            <p className="sub-text">하루의 감정을 기록 할 수 있는 다이어리</p>
+            <div className="title-wrapper">
+              <h1 className="">Mood</h1>
+              <p className="sub-text">하루의 감정을 기록 할 수 있는 다이어리</p>
+            </div>
             <div className="content-wrapper row">
               <div className="col video-wrapper">
                 <div className="media">
@@ -41,32 +43,34 @@ class MainProject2 extends Component {
                 </ul>
               </div>
             </div>
-            <div className="btn-group" role="group" aria-label="button group">
-              <form action="https://github.com/degose/mood">
-                <button type="submit" className="btn btn-info-link btn-outline-dark">
-                  <span className="fa fa-github" aria-hidden="true"></span>
-                  Github
-                </button>
-              </form>
-              <form action="https://mood-vuex.firebaseapp.com/">
-                <button type="submit" className="btn btn-info-link btn-outline-dark">
-                  <span className="fa fa-globe" aria-hidden="true"></span>
-                  Web Site
-                </button>
-              </form>
-              <form action="https://docs.google.com/spreadsheets/d/1i7tOWOv7eNiqQlEGzf7wO5ybKPk8lishXqrKqkRDrzU/edit?usp=sharing">
-                <button type="submit" className="btn btn-info-link btn-outline-dark">
-                  <span className="fa fa-pencil-square-o" aria-hidden="true"></span>
-                  Daily Scrum
-                </button>
-              </form>
-              <form action="https://youtu.be/k8K98UBskyA">
-                <button type="submit" className="btn btn-info-link btn-outline-dark">
-                  <span className="fa fa-youtube-play" aria-hidden="true"></span>
-                  Youtube
-                </button>
-              </form>
+            <div className="btn-wrapper">
+              <div className="btn-group" role="group" aria-label="button group">
+                <form action="https://github.com/degose/mood">
+                  <button type="submit" className="btn btn-info-link btn-outline-dark">
+                    <span className="fa fa-github" aria-hidden="true"></span>
+                    Github
+                  </button>
+                </form>
+                <form action="https://mood-vuex.firebaseapp.com/">
+                  <button type="submit" className="btn btn-info-link btn-outline-dark">
+                    <span className="fa fa-globe" aria-hidden="true"></span>
+                    Web Site
+                  </button>
+                </form>
+                <form action="https://docs.google.com/spreadsheets/d/1i7tOWOv7eNiqQlEGzf7wO5ybKPk8lishXqrKqkRDrzU/edit?usp=sharing">
+                  <button type="submit" className="btn btn-info-link btn-outline-dark">
+                    <span className="fa fa-pencil-square-o" aria-hidden="true"></span>
+                    Daily Scrum
+                  </button>
+                </form>
+                <form action="https://youtu.be/k8K98UBskyA">
+                  <button type="submit" className="btn btn-info-link btn-outline-dark">
+                    <span className="fa fa-youtube-play" aria-hidden="true"></span>
+                    Youtube
+                  </button>
+                </form>
 
+              </div>
             </div>
           </div>
         </div>

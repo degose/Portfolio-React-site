@@ -4,19 +4,34 @@
   display: flex;
   align-items: center;
   text-align: center;
+  .career-title {
+    margin-bottom: 60px;
+  }
 }
 
-// .career-list-wrapper {
-//   text-align: center;
-// }
+.career-list-wrapper {
+  padding: 0 50px;
+}
 
 .career-list {
-  margin-top: 60px;
-  display: inline-flex;
-  // display: flex;
-  background: red;
+  margin-bottom: 20px;
+  display: block;
   width: 100%;
-  height: 300px;
-  align-items: center;
-  justify-content: center;
+  padding: 100px 0;
+  &:hover {
+    background: #000;
+    opacity: 1;
+  }
+}
+
+.dk-bg {
+  background: #fff url('../assets/dks-techin-1.png') no-repeat;
+  opacity: 0.5;
+  background-size: 100%;
+}
+
+.ize-bg {
+  background: #fff url('../assets/ize-izeshop-1.png') no-repeat;
+  opacity: 0.5;
+  background-size: 100%;
 }

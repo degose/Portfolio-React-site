@@ -20,7 +20,7 @@ class NavBar extends Component {
                   <a className="nav-link" href="">Bond</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="">mood</a>
+                  <a className="nav-link" href="">Mood</a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="">Career</a>
