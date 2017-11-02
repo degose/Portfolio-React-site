@@ -1,32 +1,57 @@
 import React, { Component } from 'react';
+import Scroll from 'react-scroll';
+
+let Link       = Scroll.Link;
 
 class NavBar extends Component {
+  handleDelActive(to) {
+    let first_item = document.getElementById('first-item');
+    first_item.classList.remove('active');
+  }
+
+  handleSetActive(to) {
+    let first_item = document.getElementById('first-item');
+    first_item.classList.add('active');
+  }
+
   render() {
     return (
       <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
           <div className="container">
-            <a className="navbar-brand" href="/">Gose Portfolio</a>
+            <Link activeClass="active" className="navbar-brand" to="hello" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleSetActive}>
+              Gose Portfolio
+            </Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
 
             <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
               <ul className="navbar-nav">
-                <li className="nav-item active">
-                  <a className="nav-link" href="">Hello! <span className="sr-only">(current)</span></a>
+                <li className="nav-item active" id="first-item">
+                  <Link activeClass="active" className="nav-link" to="hello" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleSetActive}>
+                    Hello!
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="">Bond</a>
+                  <Link activeClass="active" className="nav-link" to="Bond" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleDelActive}>
+                    Bond
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="">Mood</a>
+                  <Link activeClass="active" className="nav-link" to="Mood" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleDelActive}>
+                    Mood
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="">Career</a>
+                  <Link activeClass="active" className="nav-link" to="Career" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleDelActive}>
+                    Career
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="">Contact</a>
+                  <Link activeClass="active" className="nav-link" to="Contact" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleDelActive}>
+                    Contact
+                  </Link>
                 </li>
               </ul>
             </div>
