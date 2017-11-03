@@ -4,6 +4,12 @@ import Scroll from 'react-scroll';
 let Link = Scroll.Link;
 
 class NavBar extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { isActive: false };
+  }
+
   handleDelActive(to) {
     let first_item = document.getElementById('first-item');
     first_item.classList.remove('active');
@@ -16,9 +22,15 @@ class NavBar extends Component {
 
   handleNavActive() {
     let target = document.getElementById('navbar-active');
-    target.classList.remove('navbar-m');
+    if (target.classList.contains('navbar-m')) {
+      target.classList.remove('navbar-m');
+    }
+    else {
+      target.classList.add('navbar-m');
+    }
   }
 
+  
   render() {
     return (
       <div>
@@ -27,11 +39,11 @@ class NavBar extends Component {
             <Link activeClass="active" className="navbar-brand" to="hello" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleSetActive}>
               Gose Portfolio
             </Link>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onChange={this.handleNavActive}>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onClick={this.handleNavActive}>
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="container navbar-active-wrapper">
-              <div className=" navbar-m-active" id="navbar-active">
+              <div className="navbar-m navbar-m-active" id="navbar-active">
                 <ul className="">
                   <li className="" id="first-item">
                     <Link activeClass="active" className="navbar-active-item" to="hello" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleSetActive}>
