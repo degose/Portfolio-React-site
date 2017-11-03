@@ -14,10 +14,10 @@ class App extends Component {
     return (
       <div>
         <NavBar />
-        <Element name="hello" className="element">
+        <Element name="hello" className="element header-info-bg">
           <HeaderInfo />
         </Element>
-        <Element name="Bond" className="element">
+        <Element name="Bond" className="element main-project1-bg">
           <MainProject1 />
         </Element>
         <Element name="Mood" className="element">
@@ -26,7 +26,7 @@ class App extends Component {
         <Element name="Career" className="element">
           <MainCareer />
         </Element>
-        <Element name="Contact" className="element">
+        <Element name="Contact" className="element contact-bg">
           <FooterContact />
         </Element>
       </div>

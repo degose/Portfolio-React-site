@@ -7,16 +7,16 @@ class MainProject2 extends Component {
         <div className="jumbotron project-bg">
           <div className="container">
             <div className="title-wrapper">
-              <h1 className="">Mood</h1>
+              <h1 className="project-title">Mood</h1>
               <p className="sub-text">하루의 감정을 기록 할 수 있는 다이어리</p>
             </div>
             <div className="content-wrapper row">
-              <div className="col video-wrapper">
-                <div className="media">
-                  <iframe title="project1" width="560" height="315" className="project-video" src="https://www.youtube.com/embed/k8K98UBskyA" frameBorder="0" gesture="media" allowFullScreen />
+              <div className="col-md-6 video-wrapper">
+                <div className="embed-responsive embed-responsive-16by9 media">
+                  <iframe title="project1" className="embed-responsive-item project-video" src="https://www.youtube.com/embed/k8K98UBskyA" frameBorder="0" gesture="media" allowFullScreen />
                 </div>
               </div>
-              <div className="col">
+              <div className="col-md-6">
                 <ul className="info">
                   <li className="info-list">
                     <h4 className="content-title">팀 구성원</h4>

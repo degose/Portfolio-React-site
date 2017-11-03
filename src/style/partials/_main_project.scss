@@ -1,6 +1,6 @@
 
 .project-bg {
-  background: #fff;
+  // background: #fff;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -9,6 +9,12 @@
 
 .title-wrapper, .btn-wrapper {
   text-align: center;
+}
+
+.project-title {
+  font-family: 'Baloo', cursive;
+  font-size: 4rem;
+  // font-weight: 300;
 }
 
 .video-wrapper {
@@ -49,4 +55,15 @@
 
 .btn-info-link {
   margin-right: 10px; 
+}
+
+@media screen and (min-width: 0px) and (max-width: 533px) {
+  .btn-info-link {
+    width: 38px;
+    overflow: hidden;
+    .fa {
+      margin-right: 20px;
+    }
+  }
+
 }

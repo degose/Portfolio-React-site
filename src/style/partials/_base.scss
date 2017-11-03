@@ -64,14 +64,31 @@
   margin-right: 5px;
 }
 
-// .jumbotron {
-//   padding-top: 20px; 
-// }
-.body {
+.jumbotron {
+  // padding-top: 20px; 
+  background: none;
+  border-radius: 0;
+}
+body {
 	margin: 0 !important;
-	padding: 0 !important;
+  padding: 0 !important;
+  background: #3F51B5; /* For browsers that do not support gradients */
+  // background: -webkit-linear-gradient(left top, #A7FFEB, #1DE9B6);
 }
 .element {
 	// height:1000px;
-	padding-top:55px;
+  padding-top:55px;
+  // background: red;
+}
+
+.header-info-bg {
+  // background: #A7FFEB;
+}
+
+.main-project1-bg {
+  // background: red;
+}
+
+.contact-bg {
+  // background: #A7FFEB;
 }
