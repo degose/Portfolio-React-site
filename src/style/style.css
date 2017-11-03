@@ -75,6 +75,30 @@ strong {
 h1 {
   font-weight: 700; }
 
+.navbar-active-wrapper {
+  position: relative; }
+
+.navbar-m {
+  display: none; }
+
+.navbar-m-active {
+  position: absolute;
+  top: 20px;
+  right: -20px;
+  background: #f8f9fa;
+  width: 100px;
+  border-radius: 5px;
+  line-height: 2.2;
+  z-index: 1;
+  text-align: center;
+  border: 1px solid #dfe0e1;
+  padding: 10px 10px; }
+  .navbar-m-active .navbar-active-item {
+    cursor: pointer;
+    font-weight: 300; }
+    .navbar-m-active .navbar-active-item:hover {
+      font-weight: 500; }
+
 .navbar-brand, .nav-link {
   cursor: pointer; }
 

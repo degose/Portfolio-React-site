@@ -7,7 +7,7 @@ import MainCareer from './component/main_career';
 import FooterContact from './component/footer_contact';
 import Scroll from 'react-scroll';
 
-let Element    = Scroll.Element;
+let Element = Scroll.Element;
 
 class App extends Component {
   render() {
@@ -29,9 +29,6 @@ class App extends Component {
         <Element name="Contact" className="element">
           <FooterContact />
         </Element>
-        
-
-        
       </div>
     );
   }
