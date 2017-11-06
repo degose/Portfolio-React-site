@@ -1,12 +1,24 @@
-// .navbar {
-//   background: rgba(255, 255, 255, 0.5);
-// }
-
 .navbar-brand {
   font-family: 'Baloo', cursive;
   font-size: 1.5rem;
 }
 
+.nav-items {
+  // background: red;
+}
+
+.navbar-nav {
+  // background: green;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+}
+
+.nav-item {
+  // background: yellow;
+  margin-left: 15px;
+}
 .nav-link {
   font-family: 'Baloo', cursive;
   font-weight: 300;

@@ -22,6 +22,9 @@ body {
 
 .element {
   padding-top: 55px; }
+  @media screen and (min-width: 0px) and (max-width: 768px) {
+    .element {
+      padding-top: 120px; } }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -82,6 +85,14 @@ h1 {
 .navbar-brand {
   font-family: 'Baloo', cursive;
   font-size: 1.5rem; }
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
+
+.nav-item {
+  margin-left: 15px; }
 
 .nav-link {
   font-family: 'Baloo', cursive;
@@ -253,7 +264,8 @@ h1 {
   min-height: 100vh; }
 
 .footer-bg {
-  background: #eee; }
+  background: #eee;
+  margin-bottom: 0; }
 
 .contact-title {
   text-align: center;
@@ -265,12 +277,20 @@ h1 {
       font-size: 3rem; } }
 
 .media {
-  margin-bottom: 20px; }
+  margin-bottom: 30px; }
 
 .profile-img {
   width: 100px;
   height: 100px;
   border-radius: 3px; }
+
+.btn-contact {
+  margin-right: 5px; }
+
+.comment-title {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #555; }
 
 .form-control, .input-group-btn {
   margin-top: 10px; }
@@ -279,5 +299,11 @@ table, thead, tr, th, tbody {
   border-radius: 3px;
   overflow: hidden; }
 
+.table-head {
+  font-weight: 500; }
+
 tbody {
   overflow: hidden; }
+
+input, .btn-comment {
+  font-weight: 300; }

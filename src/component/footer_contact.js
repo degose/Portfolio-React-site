@@ -71,7 +71,7 @@ class FooterContact extends Component {
     return post_item.map((post) => {
       return (
         <tr key={post.date}>
-          <th scope="row">{num += 1}</th>
+          <th className="table-head" scope="row">{num += 1}</th>
           <td>{post.name}</td>
           <td>{post.comment}</td>
         </tr>
@@ -96,56 +96,42 @@ class FooterContact extends Component {
                     <h5 className="mt-0 media-heading" >
                       안녕하세요! 고세민입니다.
                     </h5>
-                    <p>안녕하세요!</p>
+                    <p className="content-text">안녕하세요!</p>
+                    <p className="content-text"><a className="" href="mailto:gom0367@gmail.com"><span className="fa fa-envelope" />gom0367@gmail.com</a></p>
                     <div className="btn-group" role="group" aria-label="button group">
                       <form action="https://github.com/degose">
-                        <button type="submit" className="btn btn-info-link btn-outline-dark btn-sm">
+                        <button type="submit" className="btn btn-outline-dark btn-sm btn-contact">
                           <span className="fa fa-github" aria-hidden="true"></span>
                           Github
                         </button>
                       </form>
-                      <form action="https://mood-vuex.firebaseapp.com/">
-                        <button type="submit" className="btn btn-info-link btn-outline-dark btn-sm">
+                      <form action="https://gosecode.wordpress.com/">
+                        <button type="submit" className="btn btn-outline-dark btn-sm">
                           <span className="fa fa-globe" aria-hidden="true"></span>
-                          Web Site
+                          Blog
                         </button>
                       </form>
-                      <form action="https://docs.google.com/spreadsheets/d/1i7tOWOv7eNiqQlEGzf7wO5ybKPk8lishXqrKqkRDrzU/edit?usp=sharing">
-                        <button type="submit" className="btn btn-info-link btn-outline-dark btn-sm">
-                          <span className="fa fa-pencil-square-o" aria-hidden="true"></span>
-                          Daily Scrum
-                        </button>
-                      </form>
-                      <form action="https://youtu.be/k8K98UBskyA">
-                        <button type="submit" className="btn btn-info-link btn-outline-dark btn-sm">
-                          <span className="fa fa-youtube-play" aria-hidden="true"></span>
-                          Youtube
-                        </button>
-                      </form>
-
-              </div>
-                    <form action="https://github.com/degose">
-                      <button type="submit" className="btn btn-outline-dark btn-sm">
-                        <span className="fa fa-github" aria-hidden="true"></span>
-                        Github
-                      </button>
-                    </form>
+                    </div>
                   </div>
                 </div>
 
-                <h3>Comment를 남겨주세요.</h3>
-                <table className="table table-hover table-light">
-                  <thead>
-                    <tr>
-                      <th scope="col">No</th>
-                      <th scope="col">Name</th>
-                      <th scope="col">Comment</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {this.renderPosts()}
-                  </tbody>
-                </table>
+                <h3 className="comment-title">Comment를 남겨주세요.</h3>
+                <div className="row">
+                  <div className="col">
+                    <table className="table table-hover table-light">
+                      <thead>
+                        <tr>
+                          <th className="table-head" scope="col">No</th>
+                          <th className="table-head" scope="col">Name</th>
+                          <th className="table-head" scope="col">Comment</th>
+                        </tr>
+                      </thead>
+                      <tbody className="content-text">
+                        {this.renderPosts()}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
                 
                 <form className="" onSubmit={this.handleSubmit}>
                   <div className="row">
@@ -157,18 +143,14 @@ class FooterContact extends Component {
                     </div>
                     <div className="col-md-8">
                       <div className="input-group">
-                        <input type="text" id="input_comment" className="form-control" placeholder="Comment" aria-label="Comment" onChange={this.handleCommentChange} maxLength="70" />
+                        <input type="text" id="input_comment" className="form-control" placeholder="Comment" aria-label="Comment" onChange={this.handleCommentChange} maxLength="200" />
                         <span className="input-group-btn">
-                          <button className="btn btn-secondary" type="submit" value="Submit">올리기</button>
+                          <button className="btn btn-dark btn-comment" type="submit" value="Submit">Submit</button>
                         </span>
                       </div>
                     </div>
-
                   </div>
-
                 </form>
-
-
               </div>
             </div>
           </div>

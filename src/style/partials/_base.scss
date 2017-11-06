@@ -78,6 +78,9 @@ body {
 .element {
 	// height:1000px;
   padding-top:55px;
+  @media screen and (min-width: 0px) and (max-width: 768px){
+    padding-top: 120px;
+  }
   // background: red;
 }
 
