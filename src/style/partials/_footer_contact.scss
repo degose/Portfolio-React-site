@@ -1,8 +1,50 @@
+.footer-contact {
+  min-height: 100vh;
+}
+
+.footer-bg {
+  background: #eee;
+}
+
+.footer-content-wrapper {
+  // text-align: center;
+}
+
 .contact-title {
+  text-align: center;
   font-family: 'Baloo', cursive;
   font-size: 4rem;
+  margin-bottom: 20px; 
+  @media screen and (min-width: 0px) and (max-width: 768px){
+    font-size: 3rem;
+  }
+}
+
+.media {
+  margin-bottom: 20px;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 3px;
 }
 
 .form-control, .input-group-btn {
   margin-top: 10px;
 }
+
+table, thead, tr, th, tbody {
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+tbody {
+  overflow: hidden;
+}
+
+// caption {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+// }

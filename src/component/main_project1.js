@@ -7,7 +7,10 @@ class MainProject1 extends Component {
         <div className="jumbotron project-bg">
           <div className="container">
             <div className="title-wrapper">
-              <h1 className="project-title">Bond</h1>
+              <h1 className="project-title">
+                {/* <span><img alt="Bond로고" src="/logo-01.svg" /></span> */}
+                Bond
+              </h1>
               <p className="sub-text">그룹 생성이 가능한 SNS 서비스</p>
             </div>
             <div className="content-wrapper row">

@@ -7,7 +7,10 @@ class MainProject2 extends Component {
         <div className="jumbotron project-bg">
           <div className="container">
             <div className="title-wrapper">
-              <h1 className="project-title">Mood</h1>
+              <h1 className="project-title">
+                {/* <img alt="Mood로고" scr="/assets/l-mood.svg" /> */}
+                Mood
+                </h1>
               <p className="sub-text">하루의 감정을 기록 할 수 있는 다이어리</p>
             </div>
             <div className="content-wrapper row">

@@ -122,6 +122,9 @@ h1 {
   font-size: 5rem;
   color: #fff;
   font-family: 'Baloo', cursive; }
+  @media screen and (min-width: 0px) and (max-width: 768px) {
+    .header-title {
+      font-size: 3rem; } }
 
 .header-content-wrapper {
   text-align: center; }
@@ -162,17 +165,11 @@ h1 {
   left: 0; }
 
 .bg-img {
-  display: none; }
-
-@media screen and (min-width: 0px) and (max-width: 768px) {
-  .video {
-    display: none; }
-  .bg-img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center; } }
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center; }
 
 .video {
   object-fit: cover;
@@ -252,9 +249,35 @@ h1 {
   justify-content: space-around;
   margin-top: 20px; }
 
+.footer-contact {
+  min-height: 100vh; }
+
+.footer-bg {
+  background: #eee; }
+
 .contact-title {
+  text-align: center;
   font-family: 'Baloo', cursive;
-  font-size: 4rem; }
+  font-size: 4rem;
+  margin-bottom: 20px; }
+  @media screen and (min-width: 0px) and (max-width: 768px) {
+    .contact-title {
+      font-size: 3rem; } }
+
+.media {
+  margin-bottom: 20px; }
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 3px; }
 
 .form-control, .input-group-btn {
   margin-top: 10px; }
+
+table, thead, tr, th, tbody {
+  border-radius: 3px;
+  overflow: hidden; }
+
+tbody {
+  overflow: hidden; }

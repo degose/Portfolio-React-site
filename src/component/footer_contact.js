@@ -81,15 +81,60 @@ class FooterContact extends Component {
 
   render() {
     return (
-      <footer className="header-info">
-        <div className="jumbotron header-bg">
+      <footer className="footer-contact">
+        <div className="jumbotron footer-bg">
           <div className="container">
-            <div className="header-content-wrapper row">
+            <div className="footer-content-wrapper row">
               <div className="col">
                 <h1 className="contact-title">Contact</h1>
                 {/* <h2>Comment</h2> */}
+                <div className="media">
+                  <div className="media-left">
+                    <img className="mr-3 profile-img" alt="프로필 이미지" src="/favicon.ico" />
+                  </div>
+                  <div className="media-body">
+                    <h5 className="mt-0 media-heading" >
+                      안녕하세요! 고세민입니다.
+                    </h5>
+                    <p>안녕하세요!</p>
+                    <div className="btn-group" role="group" aria-label="button group">
+                      <form action="https://github.com/degose">
+                        <button type="submit" className="btn btn-info-link btn-outline-dark btn-sm">
+                          <span className="fa fa-github" aria-hidden="true"></span>
+                          Github
+                        </button>
+                      </form>
+                      <form action="https://mood-vuex.firebaseapp.com/">
+                        <button type="submit" className="btn btn-info-link btn-outline-dark btn-sm">
+                          <span className="fa fa-globe" aria-hidden="true"></span>
+                          Web Site
+                        </button>
+                      </form>
+                      <form action="https://docs.google.com/spreadsheets/d/1i7tOWOv7eNiqQlEGzf7wO5ybKPk8lishXqrKqkRDrzU/edit?usp=sharing">
+                        <button type="submit" className="btn btn-info-link btn-outline-dark btn-sm">
+                          <span className="fa fa-pencil-square-o" aria-hidden="true"></span>
+                          Daily Scrum
+                        </button>
+                      </form>
+                      <form action="https://youtu.be/k8K98UBskyA">
+                        <button type="submit" className="btn btn-info-link btn-outline-dark btn-sm">
+                          <span className="fa fa-youtube-play" aria-hidden="true"></span>
+                          Youtube
+                        </button>
+                      </form>
+
+              </div>
+                    <form action="https://github.com/degose">
+                      <button type="submit" className="btn btn-outline-dark btn-sm">
+                        <span className="fa fa-github" aria-hidden="true"></span>
+                        Github
+                      </button>
+                    </form>
+                  </div>
+                </div>
+
+                <h3>Comment를 남겨주세요.</h3>
                 <table className="table table-hover table-light">
-                  <caption>List of users</caption>
                   <thead>
                     <tr>
                       <th scope="col">No</th>
@@ -107,12 +152,12 @@ class FooterContact extends Component {
                     <div className="col-md-4">
                       <div className="input-group">
                         {/* <label className="sr-only" for="exampleInputEmail3">Email address</label> */}
-                        <input type="text" id="input_name" className="form-control" placeholder="Name" onChange={this.handleNameChange} />
+                        <input type="text" id="input_name" className="form-control" placeholder="Name" onChange={this.handleNameChange} maxLength="20" />
                       </div>
                     </div>
                     <div className="col-md-8">
                       <div className="input-group">
-                        <input type="text" id="input_comment" className="form-control" placeholder="Comment" aria-label="Comment" onChange={this.handleCommentChange}></input>
+                        <input type="text" id="input_comment" className="form-control" placeholder="Comment" aria-label="Comment" onChange={this.handleCommentChange} maxLength="70" />
                         <span className="input-group-btn">
                           <button className="btn btn-secondary" type="submit" value="Submit">올리기</button>
                         </span>
@@ -123,13 +168,7 @@ class FooterContact extends Component {
 
                 </form>
 
-                <h2>contact</h2>
-                <form action="https://github.com/degose">
-                  <button type="submit" className="btn btn-outline-dark">
-                    <span className="fa fa-github" aria-hidden="true"></span>
-                    Github
-                  </button>
-                </form>
+
               </div>
             </div>
           </div>
