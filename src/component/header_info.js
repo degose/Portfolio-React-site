@@ -17,12 +17,18 @@ class HeaderInfo extends Component {
                   </button>
                 </form>
               </div>
-              {/* <div className="col img-wrapper">
-                <img alt="profile-img" src="https://avatars1.githubusercontent.com/u/27682015?s=400&u=e4ee0d37f412f33eb20482e1f0542a6cde51c90b&v=4" className="profile-img rounded" />
-              </div> */}
+              <div className="bg-wrapper">
+                <img alt="배경 이미지" className="bg-img" src="https://images.unsplash.com/photo-1485458029194-00cff7de3ef7?auto=format&fit=crop&w=2850&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" />
+              </div>
             </div>
           </div>
         </div>
+        {/* <div className="bg-wrapper">
+          <video className="video" autoPlay loop muted>
+            <source src="https://gcs-vimeo.akamaized.net/exp=1509967581~acl=%2A%2F860696547.mp4%2A~hmac=cc9838158bccb5b153b8f47c672def3c35c8f44c174fbadfff2eea6c1caf1202/vimeo-prod-skyfire-std-us/01/3071/9/240358919/860696547.mp4" type="video/mp4"></source>
+          </video>
+          <img className="bg-img" alt="모바일화면 배경이미지" scr="https://images.unsplash.com/photo-1485458029194-00cff7de3ef7?auto=format&fit=crop&w=2850&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" />
+        </div> */}
       </header>
 
      
