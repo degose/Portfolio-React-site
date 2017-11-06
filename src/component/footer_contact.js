@@ -6,10 +6,21 @@ class FooterContact extends Component {
     super(props);
 
     this.state = {name: '', comment: ''};
+    this.state = {
+      posts: [],
+    };
 
     this.handleNameChange = this.handleNameChange.bind(this);
     this.handleCommentChange = this.handleCommentChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  componentWillMount() {
+    // 라이프사이클 메소드
+    // 해당 함수는 컴포넌트가 처음 DOM에 렌더링 되자마자 자동적으로 호출되는 것.
+    // 리렌더링될때 다시 호출되지 않는다. 즉 다시 호출되지 않는다.
+
+    this.fetchPosts();
   }
 
   handleNameChange(event) {
@@ -21,20 +32,50 @@ class FooterContact extends Component {
   }
 
   handleSubmit(event) {
-    console.log('내가 적은 말은', this.state.name);
     event.preventDefault();
-    axios.post('https://portfolio-react-site.firebaseio.com', 
+    let today = new Date();
+    axios.post('https://portfolio-react-site.firebaseio.com/post.json', 
     {
-      name: '되냐', 
-      comment: '안되냐'
-      // name: this.state.name, 
-      // comment: this.state.comment
+      name: this.state.name, 
+      comment: this.state.comment,
+      date: today
     })
     .then(response => {
-      console.log('response', response);
+      // console.log('response', response);
+      this.fetchPosts();
+      document.getElementById('input_name').value = '';
+      document.getElementById('input_comment').value = '';
+      // this.setState({name: '', comment: ''});
     })
     .catch(error => {
       console.log(error);
+    });
+  }
+
+  fetchPosts() {
+    axios.get('https://portfolio-react-site.firebaseio.com/post.json')
+    .then(response => {
+      // console.log('response', response.data);
+      let item = Object.values(response.data);
+      this.setState({posts: item})
+    })
+    .catch(error => {
+      console.log(error);
+    });
+  }
+
+  renderPosts() {
+      let post_item = this.state.posts;
+      let num = 0
+      // console.log('post_item', post_item);
+    return post_item.map((post) => {
+      return (
+        <tr key={post.date}>
+          <th scope="row">{num += 1}</th>
+          <td>{post.name}</td>
+          <td>{post.comment}</td>
+        </tr>
+      );
     });
   }
 
@@ -51,27 +92,13 @@ class FooterContact extends Component {
                   <caption>List of users</caption>
                   <thead>
                     <tr>
-                      <th scope="col">#</th>
+                      <th scope="col">No</th>
                       <th scope="col">Name</th>
                       <th scope="col">Comment</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Mark</td>
-                      <td>Otto</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Larry</td>
-                      <td>the Bird</td>
-                    </tr>
+                    {this.renderPosts()}
                   </tbody>
                 </table>
                 
@@ -80,12 +107,12 @@ class FooterContact extends Component {
                     <div className="col-md-4">
                       <div className="input-group">
                         {/* <label className="sr-only" for="exampleInputEmail3">Email address</label> */}
-                        <input type="text" className="form-control" placeholder="Name" value={this.state.name} onChange={this.handleNameChange} />
+                        <input type="text" id="input_name" className="form-control" placeholder="Name" onChange={this.handleNameChange} />
                       </div>
                     </div>
                     <div className="col-md-8">
                       <div className="input-group">
-                        <input type="text" className="form-control" placeholder="Comment" aria-label="Comment" value={this.state.comment} onChange={this.handleCommentChange}></input>
+                        <input type="text" id="input_comment" className="form-control" placeholder="Comment" aria-label="Comment" onChange={this.handleCommentChange}></input>
                         <span className="input-group-btn">
                           <button className="btn btn-secondary" type="submit" value="Submit">올리기</button>
                         </span>
