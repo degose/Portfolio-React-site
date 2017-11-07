@@ -13,7 +13,7 @@ class HeaderInfo extends Component {
                   <strong>저는 유능할 때 행복함을 느낍니다.</strong> 늘 새로운 것을 탐색하고 학습하는 저는 그래픽 디자이너로 일하다 웹서비스를 구축해 낸다는 것에 성취감을 느껴 프론트엔드 개발자가 되었습니다. 비록 개발자로서의 경험이 길지는 않지만, <br /><strong>우리의 한계는 없습니다.</strong>  
                 </p>
 
-                <form action="https://github.com/degose">
+                <form action="https://github.com/degose" target="_blank">
                   <button type="submit" className="btn-header btn btn-outline-light">
                     <span className="fa fa-github" aria-hidden="true"></span>
                     Github

@@ -4,7 +4,6 @@
 }
 
 .navbar-nav {
-  // background: green;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -15,7 +14,6 @@
 }
 
 .nav-item {
-  // background: yellow;
   margin-left: 15px;
 }
 .nav-link {
@@ -55,9 +53,3 @@
 .navbar-brand, .nav-link {
   cursor: pointer;
 }
-
-// @media screen and (min-width: 991px) {
-//   .navbar-active-wrapper {
-//     display: none;
-//   }
-// }

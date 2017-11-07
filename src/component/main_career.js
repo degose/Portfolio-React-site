@@ -15,7 +15,9 @@ class MainCareer extends Component {
                     <h4 className="card-title">dk service</h4>
                     <span className="card-text">(2014. 3 ~ 2016. 7)</span>
                     <p className="card-text">UI디자인팀</p>
-                    <a href="https://gosecode.wordpress.com/project-type/dk-service/" className="btn btn-career btn-outline-dark">자세히 보기</a>
+                    <form action="https://gosecode.wordpress.com/project-type/dk-service/" target="_blank">
+                      <button type="submit"className="btn btn-career btn-outline-dark">자세히 보기</button>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -26,7 +28,9 @@ class MainCareer extends Component {
                     <h4 className="card-title">ize 웹 매거진</h4>
                     <span className="card-text">(2016. 8 ~ 2017. 4)</span>
                     <p className="card-text">그래픽 디자인팀</p>
-                    <a href="https://gosecode.wordpress.com/project-type/ize/" className="btn btn-career btn-outline-dark">자세히 보기</a>
+                    <form action="https://gosecode.wordpress.com/project-type/ize/" target="_blank">
+                      <button type="submit" className="btn btn-career btn-outline-dark">자세히 보기</button>
+                    </form>
                   </div>
                 </div>
               </div>

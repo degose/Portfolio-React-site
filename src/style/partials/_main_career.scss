@@ -14,16 +14,10 @@
   font-size: 4rem;
   @media screen and (min-width: 0px) and (max-width: 768px){
     font-size: 3rem;
+    padding-top: 70px;
   }
 }
 
-// .card-more {
-
-// }
-
-.card{
-  // background: #ECEFF1;
-}
 .card-more {
   display: flex;
   flex-flow: row;
@@ -56,24 +50,6 @@
 .card-container {
   display: flex;
   justify-content: space-around;
-  margin-top: 20px;
+  margin-bottom: 15px;
 }
 
-// .career-bg-wrapper {
-//   overflow: hidden;
-//   height: 100vh;
-//   width: 100%;
-//   margin-top: 55px;
-//   position: absolute;
-//   z-index: -1;
-//   top: 0;
-//   left: 0;
-// }
-
-// .career-bg-img {
-//   object-fit: cover;
-//   width: 100%;
-//   height: 100%;
-//   background-size: cover;
-//   background-position: center;
-// }

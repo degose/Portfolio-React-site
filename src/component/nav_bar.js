@@ -34,44 +34,6 @@ class NavBar extends Component {
               Gose Portfolio
             </Link>
 
-            {/* <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onClick={this.handleNavActive}>
-              <span className="navbar-toggler-icon"></span>
-            </button> */}
-
-            {/* <div className="container navbar-active-wrapper">
-              <div className="navbar-m navbar-m-active" id="navbar-active">
-                <ul className="">
-                  <li className="" id="first-item">
-                    <Link activeClass="active" className="navbar-active-item" to="hello" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleSetActive}>
-                      Hello!
-                    </Link>
-                  </li>
-                  <li className="">
-                    <Link activeClass="active" className="navbar-active-item" to="Bond" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleDelActive}>
-                      Bond
-                    </Link>
-                  </li>
-                  <li className="">
-                    <Link activeClass="active" className="navbar-active-item" to="Mood" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleDelActive}>
-                      Mood
-                    </Link>
-                  </li>
-                  <li className="">
-                    <Link activeClass="active" className="navbar-active-item" to="Career" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleDelActive}>
-                      Career
-                    </Link>
-                  </li>
-                  <li className="">
-                    <Link activeClass="active" className="navbar-active-item" to="Contact" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleDelActive}>
-                      Contact
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div> */}
-
-
-            {/* <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent"> */}
             <div className="nav-items col-md-6 col-xs-12" id="navbarSupportedContent">
               <ul className="navbar-nav">
                 <li className="nav-item active" id="first-item">
