@@ -26,6 +26,18 @@ body {
     .element {
       padding-top: 120px; } }
 
+.header-info-bg {
+  background: rgba(0, 0, 0, 0.8); }
+
+.main-project-bg {
+  border-bottom: 1px solid #E0E0E0; }
+
+.main-career-bg {
+  background: #868e96; }
+
+.contact-bg {
+  background: #343a40; }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -90,6 +102,9 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: flex-end; }
+  @media screen and (min-width: 0px) and (max-width: 768px) {
+    .navbar-nav {
+      justify-content: space-around; } }
 
 .nav-item {
   margin-left: 15px; }
@@ -144,7 +159,11 @@ h1 {
   margin-top: 20px;
   margin-bottom: 50px;
   font-weight: 200;
-  color: #fff; }
+  color: #fff;
+  font-size: 1.5rem; }
+  @media screen and (min-width: 0px) and (max-width: 768px) {
+    .header-content-text {
+      font-size: 1.2rem; } }
 
 .btn-header {
   color: #fff; }
@@ -159,7 +178,6 @@ h1 {
   height: 200px; }
 
 .header-bg {
-  background: rgba(0, 0, 0, 0.7);
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -201,6 +219,9 @@ h1 {
 .project-title {
   font-family: 'Baloo', cursive;
   font-size: 4rem; }
+  @media screen and (min-width: 0px) and (max-width: 768px) {
+    .project-title {
+      font-size: 3rem; } }
 
 .video-wrapper {
   display: flex;
@@ -248,9 +269,27 @@ h1 {
 .career-title {
   font-family: 'Baloo', cursive;
   font-size: 4rem; }
+  @media screen and (min-width: 0px) and (max-width: 768px) {
+    .career-title {
+      font-size: 3rem; } }
+
+.card-more {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center; }
+
+.fa-plus-square {
+  font-size: 2rem;
+  color: #868e96; }
 
 .card-title {
-  font-size: 1.4rem; }
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 5px; }
+
+.card-text {
+  font-weight: 200; }
 
 .btn-career {
   margin-top: 20px; }
@@ -264,12 +303,12 @@ h1 {
   min-height: 100vh; }
 
 .footer-bg {
-  background: #eee;
   margin-bottom: 0; }
 
 .contact-title {
   text-align: center;
   font-family: 'Baloo', cursive;
+  color: #fff;
   font-size: 4rem;
   margin-bottom: 20px; }
   @media screen and (min-width: 0px) and (max-width: 768px) {
@@ -277,20 +316,37 @@ h1 {
       font-size: 3rem; } }
 
 .media {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  color: #fff; }
+
+.media-heading {
+  margin-bottom: 15px; }
 
 .profile-img {
-  width: 100px;
-  height: 100px;
+  width: 160px;
+  height: 160px;
   border-radius: 3px; }
+  @media screen and (min-width: 0px) and (max-width: 768px) {
+    .profile-img {
+      display: none; } }
 
 .btn-contact {
   margin-right: 5px; }
 
 .comment-title {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 5px;
-  color: #555; }
+  color: #fff;
+  font-weight: 500; }
+
+dt, dd {
+  margin-bottom: 7px; }
+
+code {
+  padding: 2px; }
+
+.contact-link:hover {
+  color: #868e96; }
 
 .form-control, .input-group-btn {
   margin-top: 10px; }
@@ -304,6 +360,11 @@ table, thead, tr, th, tbody {
 
 tbody {
   overflow: hidden; }
+
+.close {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 5px; }
 
 input, .btn-comment {
   font-weight: 300; }

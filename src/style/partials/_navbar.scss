@@ -3,15 +3,14 @@
   font-size: 1.5rem;
 }
 
-.nav-items {
-  // background: red;
-}
-
 .navbar-nav {
   // background: green;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  @media screen and (min-width: 0px) and (max-width: 768px){
+    justify-content: space-around;
+  }
 
 }
 

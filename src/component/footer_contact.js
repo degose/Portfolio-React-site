@@ -8,6 +8,7 @@ class FooterContact extends Component {
     this.state = {name: '', comment: ''};
     this.state = {
       posts: [],
+      keys: []
     };
 
     this.handleNameChange = this.handleNameChange.bind(this);
@@ -56,8 +57,11 @@ class FooterContact extends Component {
     axios.get('https://portfolio-react-site.firebaseio.com/post.json')
     .then(response => {
       // console.log('response', response.data);
+      let key = Object.keys(response.data);
       let item = Object.values(response.data);
+      // console.log('item', key);
       this.setState({posts: item})
+      this.setState({keys: key})
     })
     .catch(error => {
       console.log(error);
@@ -70,10 +74,12 @@ class FooterContact extends Component {
       // console.log('post_item', post_item);
     return post_item.map((post) => {
       return (
+        // <tr key={post.date}>
         <tr key={post.date}>
           <th className="table-head" scope="row">{num += 1}</th>
           <td>{post.name}</td>
           <td>{post.comment}</td>
+          {/* <td><button type="button" className="close" aria-label="Close"><span aria-hidden="true">&times;</span></button></td> */}
         </tr>
       );
     });
@@ -87,31 +93,35 @@ class FooterContact extends Component {
             <div className="footer-content-wrapper row">
               <div className="col">
                 <h1 className="contact-title">Contact</h1>
-                {/* <h2>Comment</h2> */}
                 <div className="media">
                   <div className="media-left">
                     <img className="mr-3 profile-img" alt="프로필 이미지" src="/favicon.ico" />
                   </div>
                   <div className="media-body">
                     <h5 className="mt-0 media-heading" >
-                      안녕하세요! 고세민입니다.
+                    안녕하세요! 프론트엔드 개발자 고세민입니다.
                     </h5>
-                    <p className="content-text">안녕하세요!</p>
-                    <p className="content-text"><a className="" href="mailto:gom0367@gmail.com"><span className="fa fa-envelope" />gom0367@gmail.com</a></p>
-                    <div className="btn-group" role="group" aria-label="button group">
-                      <form action="https://github.com/degose">
-                        <button type="submit" className="btn btn-outline-dark btn-sm btn-contact">
-                          <span className="fa fa-github" aria-hidden="true"></span>
-                          Github
-                        </button>
-                      </form>
-                      <form action="https://gosecode.wordpress.com/">
-                        <button type="submit" className="btn btn-outline-dark btn-sm">
-                          <span className="fa fa-globe" aria-hidden="true"></span>
-                          Blog
-                        </button>
-                      </form>
-                    </div>
+                    <dl className="row">
+                      <dt className="col-sm-2">Skills </dt>
+                      <dd className="col-sm-10 content-text">
+                        <code>HTML5</code> <code>CSS3</code> <code>Sass/Scss</code> <code>JavaScript</code> <code>Vue.js</code> <code>React</code> <code>jQuery</code> <code>photoshop</code> <code>illustrator</code> <code>...</code> 
+                      </dd>
+
+                      <dt className="col-sm-2">Email </dt>
+                      <dd className="col-sm-10 content-text">
+                        <p><a className="contact-link" href="mailto:gom0367@gmail.com">gom0367@gmail.com</a></p>
+                      </dd>
+
+                      <dt className="col-sm-2">Github </dt>
+                      <dd className="col-sm-10 content-text">
+                        <p><a className="contact-link" href="https://github.com/degose">https://github.com/degose</a></p>
+                      </dd>
+
+                      <dt className="col-sm-2">Blog </dt>
+                      <dd className="col-sm-10 content-text">
+                        <p><a className="contact-link" href="https://gosecode.wordpress.com">https://gosecode.wordpress.com</a></p>
+                      </dd>
+                    </dl>
                   </div>
                 </div>
 
@@ -124,6 +134,7 @@ class FooterContact extends Component {
                           <th className="table-head" scope="col">No</th>
                           <th className="table-head" scope="col">Name</th>
                           <th className="table-head" scope="col">Comment</th>
+                          {/* <th className="table-head" scope="col"></th> */}
                         </tr>
                       </thead>
                       <tbody className="content-text">
@@ -137,7 +148,6 @@ class FooterContact extends Component {
                   <div className="row">
                     <div className="col-md-4">
                       <div className="input-group">
-                        {/* <label className="sr-only" for="exampleInputEmail3">Email address</label> */}
                         <input type="text" id="input_name" className="form-control" placeholder="Name" onChange={this.handleNameChange} maxLength="20" />
                       </div>
                     </div>
@@ -145,7 +155,7 @@ class FooterContact extends Component {
                       <div className="input-group">
                         <input type="text" id="input_comment" className="form-control" placeholder="Comment" aria-label="Comment" onChange={this.handleCommentChange} maxLength="200" />
                         <span className="input-group-btn">
-                          <button className="btn btn-dark btn-comment" type="submit" value="Submit">Submit</button>
+                          <button className="btn btn-secondary btn-comment" type="submit" value="Submit">Submit</button>
                         </span>
                       </div>
                     </div>

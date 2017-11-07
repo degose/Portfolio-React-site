@@ -12,13 +12,40 @@
 .career-title {
   font-family: 'Baloo', cursive;
   font-size: 4rem;
+  @media screen and (min-width: 0px) and (max-width: 768px){
+    font-size: 3rem;
+  }
 }
 
-.card-body {
-  // background: #eee;
+// .card-more {
+
+// }
+
+.card{
+  // background: #ECEFF1;
 }
+.card-more {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fa-plus-square {
+  font-size: 2rem;
+  color: #868e96;
+}
+
+
 .card-title {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  // font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.card-text {
+  font-weight: 200;
 }
 
 .btn-career {
@@ -31,3 +58,22 @@
   justify-content: space-around;
   margin-top: 20px;
 }
+
+// .career-bg-wrapper {
+//   overflow: hidden;
+//   height: 100vh;
+//   width: 100%;
+//   margin-top: 55px;
+//   position: absolute;
+//   z-index: -1;
+//   top: 0;
+//   left: 0;
+// }
+
+// .career-bg-img {
+//   object-fit: cover;
+//   width: 100%;
+//   height: 100%;
+//   background-size: cover;
+//   background-position: center;
+// }

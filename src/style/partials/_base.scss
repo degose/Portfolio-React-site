@@ -85,13 +85,19 @@ body {
 }
 
 .header-info-bg {
-  // background: #A7FFEB;
+  background: rgba($color: #000000, $alpha: 0.8);
 }
 
-.main-project1-bg {
+.main-project-bg {
+  border-bottom: 1px solid #E0E0E0;
   // background: red;
 }
 
+.main-career-bg {
+  background: #868e96;
+}
+
 .contact-bg {
-  // background: #A7FFEB;
+  // background: #212121;
+  background: #343a40;
 }

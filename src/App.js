@@ -17,13 +17,13 @@ class App extends Component {
         <Element name="hello" className="element header-info-bg">
           <HeaderInfo />
         </Element>
-        <Element name="Bond" className="element main-project1-bg">
+        <Element name="Bond" className="element main-project-bg">
           <MainProject1 />
         </Element>
-        <Element name="Mood" className="element">
+        <Element name="Mood" className="element main-project-bg">
           <MainProject2 />
         </Element>
-        <Element name="Career" className="element">
+        <Element name="Career" className="element main-career-bg">
           <MainCareer />
         </Element>
         <Element name="Contact" className="element contact-bg">
