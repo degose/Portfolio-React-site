@@ -35,6 +35,8 @@ class FooterContact extends Component {
   handleSubmit(event) {
     event.preventDefault();
     let today = new Date();
+    // render 자식요소의 유니크 key 값을 위해서 작성 시간을 얻는다.
+
     axios.post('https://portfolio-react-site.firebaseio.com/post.json', 
     {
       name: this.state.name, 
@@ -68,6 +70,7 @@ class FooterContact extends Component {
     });
   }
 
+  // 코멘트 리스트 랜더
   renderPosts() {
       let post_item = this.state.posts;
       let num = 0
@@ -114,12 +117,12 @@ class FooterContact extends Component {
 
                       <dt className="col-sm-2">Github </dt>
                       <dd className="col-sm-10 content-text">
-                        <p><a className="contact-link" href="https://github.com/degose">https://github.com/degose</a></p>
+                        <p><a className="contact-link" target="_blank" href="https://github.com/degose">https://github.com/degose</a></p>
                       </dd>
 
                       <dt className="col-sm-2">Blog </dt>
                       <dd className="col-sm-10 content-text">
-                        <p><a className="contact-link" href="https://gosecode.wordpress.com">https://gosecode.wordpress.com</a></p>
+                        <p><a className="contact-link" target="_blank" href="https://gosecode.wordpress.com">https://gosecode.wordpress.com</a></p>
                       </dd>
                     </dl>
                   </div>

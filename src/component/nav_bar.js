@@ -4,6 +4,8 @@ import Scroll from 'react-scroll';
 let Link = Scroll.Link;
 
 class NavBar extends Component {
+
+  // 기본으로 active클래스를 가지는 첫번째 링크의 active클래스 규칙 구성
   handleDelActive(to) {
     let first_item = document.getElementById('first-item');
     first_item.classList.remove('active');
@@ -13,17 +15,6 @@ class NavBar extends Component {
     let first_item = document.getElementById('first-item');
     first_item.classList.add('active');
   }
-
-  handleNavActive() {
-    let target = document.getElementById('navbar-active');
-    if (target.classList.contains('navbar-m')) {
-      target.classList.remove('navbar-m');
-    }
-    else {
-      target.classList.add('navbar-m');
-    }
-  }
-
   
   render() {
     return (
